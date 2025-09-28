@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 1000;
+    border-bottom: px solid #0f0f0f;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.menu-btn:hover {
+    background-color: #272727;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ff0000;
+    margin-right: 8px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+}
+
+.search-input {
+    flex: 1;
+    background-color: #121212;
+    border: 1px solid #272727;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+}
+
+.search-input:focus {
+    border: #1c62b9
+}
+
+.search-btn {
+    background-color: #272727;
+    border: 1px solid #272727;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 0 40px 40px 0;
+    border-left: none;
+}
+
+.search-btn:hover {
+    background-color: #3d3d3d;
+}
+
+.mic-btn {
+    background-color: #272727;
+    border: none;
+    color: #fff;
+    width: 40px;
+    border-radius: 50px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.mic-btn:hover {
+    background-color: #3d3d3d;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.header-btn:hover {
+    background-color: #272727;
+}
+
+.profile-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f9f6f9, #4ecd4e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 240px;
+    height: calc(100vh-56px);
+    background-color: #0f0f0f;
+    padding: 8px, 0;
+    overflow-y: auto;
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed {
+    transform: translateX(-240px);
+}
+
+.sidebar-section {
+    margin-bottom: 8px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.sidebar-item:hover {
+    background-color: #272727;
+}
+
+.sidebar-item.active {
+    background-color: #272727;
+    font-weight: 700;
+}
+
+.sidebar-item i {
+    width: 24px;
+    margin-right: 24px;
+    font-size: 20px;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background-color: #272727;
+    margin-top: 8px 0;
+}
+
+.sidebar-title {
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Main Content */
+
+.main-content {
+    margin-left: 240px;
+    margin-top: 56px;
+    padding: 24px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content-expanded {
+    margin-left: 0;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.category-tab {
+    background-color: #272727;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.category-tabs:hover {
+    background-color: #3d3d3d;
+}
+
+.category-tab.active{
+    background-color: #fff;
+    color: #000;
+}

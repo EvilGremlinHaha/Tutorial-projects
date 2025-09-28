@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Homepage UI Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn" onclick="togglesidebar()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <a href="#" class="logo">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+        </div>
+
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="search" />
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button class="mic-btn">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <div class="header-right">
+            <button class="header-btn">
+                <i class="fas fa-video"></i>
+            </button>
+
+            <button class="header-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+
+            <div class="profile-btn">A</div>
+        </div>
+    </header>
+    <!--Sidebar-->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+            <a href="#" class="sidebar-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-compass"></i>
+                <span>Explore</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-play-circle"></i>
+                <span>Shorts</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-list"></i>
+                <span>Subscriptions</span>
+            </a>
+        </div>
+
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-folder"></i>
+            <span>Library</span>
+        </a>
+
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-history"></i>
+            <span>History</span>
+        </a>
+
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-clock"></i>
+            <span>Watch Later</span>
+        </a>
+
+        <a href="#" class="sidebar-item">
+            <i class="fas fa-thumbs-up"></i>
+            <span>Liked Videos</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Subscriptions</div>
+
+            <!--Third sidebar-->
+
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Tech Channel</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Gaming Hub</span>
+            </a>
+
+            <a href="#" class="sidebar-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Music Zone</span>
+            </a>
+        </div>
+    </nav>
+
+    <!--Main Content-->
+
+    <main class="main-content" id="main-content">
+        <div class="category-tabs">
+            <button class="category-tab active">All</button>
+            <button class="category-tab">Gaming</button>
+            <button class="category-tab">Music</button>
+            <button class="category-tab">Technology</button>
+            <button class="category-tab">Sports</button>
+            <button class="category-tab">Education</button>
+            <button class="category-tab">Comedy</button>
+            <button class="category-tab">News</button>
+            <button class="category-tab">Science</button>
+            <button class="category-tab">Travel</button>
+        </div>
+
+
+        <!--ALL VIDEOS DIV(S)?-->
+        <div class="video-grid" id="video-grid">
+            <!--Starting to use JavaScript Soon-->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
